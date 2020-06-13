@@ -2,4 +2,9 @@
 # tasks file for desktop
 - name: install i3 window manager
   apt:
-    name: ['i3-wm']
+    name: ['i3-wm', 'xinit']
+
+- name: set i3 autostart in /etc/profile
+  lineinfile:
+    path: /etc/profile
+    line: startx /usr/bin/i3
