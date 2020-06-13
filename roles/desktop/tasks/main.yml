@@ -1,0 +1,5 @@
+---
+# tasks file for desktop
+- name: install i3 window manager
+  apt:
+    name: ['i3-wm']
