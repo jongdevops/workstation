@@ -1,0 +1,16 @@
+---
+# tasks file for swdev---
+- name: Install vscode repo key
+  apt_key:
+    url: https://packages.microsoft.com/keys/microsoft.asc 
+
+- name: Install vscode repo
+  apt_repository:
+    repo: deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main 
+    filename: vscode
+    update_cache: yes
+
+- name: Install vscode
+  apt:
+    name: code
+    update_cache: yes

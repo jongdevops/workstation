@@ -7,3 +7,4 @@
   roles:
     - role: desktop
     - role: apps
+    - role: swdev
