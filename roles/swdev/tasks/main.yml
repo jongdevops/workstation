@@ -14,3 +14,8 @@
   apt:
     name: code
     update_cache: yes
+
+
+- name: VSCode python development
+  apt:
+    name: ["python3-pip"]
