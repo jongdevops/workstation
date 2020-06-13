@@ -2,11 +2,7 @@
 # tasks file for desktop
 - name: install i3 window manager
   apt:
-    name: ['i3-wm', 'xinit']
-
-- name: install i3 status-bar and menu
-  apt:
-    name: ['i3status', 'rofi']
+    name: ['i3', 'xinit']
 
 - name: set i3 autostart in /etc/profile
   lineinfile:
