@@ -15,7 +15,14 @@
     name: code
     update_cache: yes
 
-
 - name: VSCode python development
   apt:
     name: ["python3-pip"]
+
+- name: Allow passwordless sudo for development
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: '^%sudo'
+    line: '%sudo ALL=(ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
