@@ -1,0 +1,17 @@
+---
+# tasks file for swtools
+- name: Install unzip
+  apt:
+    name: unzip
+
+- name: Download and install Packer
+  unarchive:
+    src: https://releases.hashicorp.com/packer/1.6.0/packer_1.6.0_linux_amd64.zip
+    dest: /usr/local/bin
+    remote_src: yes
+
+- name: Download and install Terraform
+  unarchive:
+    src: https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
+    dest: /usr/local/bin
+    remote_src: yes

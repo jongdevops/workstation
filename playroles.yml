@@ -8,3 +8,4 @@
     - role: desktop
     - role: apps
     - role: swdev
+    - role: swtools
