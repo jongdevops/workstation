@@ -1,0 +1,8 @@
+---
+# tasks file for books
+- name: Create `books` directory
+  file:
+    path: /home/jonathang/books
+    state: directory
+  tags:
+    - books

@@ -9,3 +9,4 @@
     - role: apps
     - role: swdev
     - role: swtools
+    - role: books
