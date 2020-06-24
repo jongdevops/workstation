@@ -21,3 +21,7 @@
     src: https://github.com/terraform-linters/tflint/releases/download/v0.16.2/tflint_linux_amd64.zip
     dest: /usr/local/bin
     remote_src: yes
+
+- name: Install Leiningen for Clojure development
+  apt:
+    name: leiningen
