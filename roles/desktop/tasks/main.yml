@@ -8,3 +8,7 @@
   lineinfile:
     path: /etc/profile
     line: startx /usr/bin/i3
+
+- name: install volume control
+  apt:
+    name: ['alsa-utils']
