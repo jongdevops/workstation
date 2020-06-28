@@ -3,3 +3,11 @@
 - name: Install LMMS
   apt:
     name: lmms
+  tags:
+    - daw
+
+- name: Install gconf needed for Magenta
+  apt:
+    name: libgconf-2-4
+  tags:
+    - daw

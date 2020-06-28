@@ -25,3 +25,23 @@
 - name: Install Leiningen for Clojure development
   apt:
     name: leiningen
+
+- name: Install docker repo key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg 
+  tags:
+    - docker
+
+- name: Install docker repo
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable 
+    filename: docker-ce
+    update_cache: yes
+  tags:
+    - docker
+
+- name: Install docker
+  apt:
+    name: docker-ce
+  tags:
+    - docker
