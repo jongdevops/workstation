@@ -1,8 +1,8 @@
 ---
 # tasks file for daw
-- name: Install LMMS
+- name: Install Wine
   apt:
-    name: lmms
+    name: wine
   tags:
     - daw
 

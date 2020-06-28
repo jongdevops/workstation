@@ -4,6 +4,12 @@
   apt:
     name: unzip
 
+- name: Install p7zip
+  apt:
+    name: p7zip
+  tags:
+    - 7z
+
 - name: Download and install Packer
   unarchive:
     src: https://releases.hashicorp.com/packer/1.6.0/packer_1.6.0_linux_amd64.zip
