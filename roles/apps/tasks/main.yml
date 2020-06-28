@@ -4,24 +4,9 @@
   apt:
     name: xterm
 
-- name: Install brave browser repo key
-  apt_key:
-    url: https://brave-browser-apt-release.s3.brave.com/brave-core.asc
-  tags:
-    - brave-browser
-
-- name: Install brave browser repo
-  apt_repository:
-    repo: deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com bionic main
-    filename: brave
-    state: absent
-  tags:
-    - brave-browser
-
-- name: Install brave browser
+- name: Install Firefox Web-browser
   apt:
-    name: brave-browser
+    name: firefox
     update_cache: yes
-    state: absent
   tags:
-    - brave-browser
+    - firefox
