@@ -1,0 +1,5 @@
+---
+# tasks file for daw
+- name: Install LMMS
+  apt:
+    name: lmms
