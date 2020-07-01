@@ -4,9 +4,9 @@
   apt:
     name: xterm
 
-- name: Install Firefox Web-browser
+- name: Install Chrome Web-browser
   apt:
-    name: firefox
+    deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     update_cache: yes
   tags:
-    - firefox
+    - chrome-browser
