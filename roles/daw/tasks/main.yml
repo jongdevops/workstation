@@ -1,11 +1,5 @@
 ---
 # tasks file for daw
-- name: Install Wine
-  apt:
-    name: wine
-  tags:
-    - daw
-
 - name: Install gconf needed for Magenta
   apt:
     name: libgconf-2-4
