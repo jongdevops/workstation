@@ -15,6 +15,6 @@
 
 - name: install snap
   apt:
-    name: ['snap']
+    name: ['snapd']
   tags:
     - snap
