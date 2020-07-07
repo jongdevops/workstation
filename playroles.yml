@@ -11,3 +11,4 @@
     - role: swtools
     - role: books
     - role: daw
+    - role: eda

@@ -1,0 +1,7 @@
+---
+# tasks file for eda
+- name: Install Verilator (Verilog Simulator)
+  apt:
+    name: verilator
+  tags:
+    - verilator
