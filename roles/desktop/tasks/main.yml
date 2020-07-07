@@ -12,3 +12,9 @@
 - name: install volume control
   apt:
     name: ['alsa-utils']
+
+- name: install snap
+  apt:
+    name: ['snape']
+  tags:
+    - snap
