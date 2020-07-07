@@ -11,3 +11,9 @@
     name: gtkwave
   tags:
     - gtkwave
+
+- name: Install Universal CTAGS for Verilog
+  snap:
+    name: universal-ctags
+  tags:
+    - ctags
