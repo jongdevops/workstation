@@ -5,3 +5,9 @@
     name: verilator
   tags:
     - verilator
+
+- name: Install GTKWave (WaveForm Viewer)
+  apt:
+    name: gtkwave
+  tags:
+    - gtkwave
