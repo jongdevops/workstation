@@ -1,0 +1,7 @@
+---
+# tasks file for imgedit
+- name: Image info tools
+  apt:
+    name: cmtk
+  tags:
+    - cmtk
