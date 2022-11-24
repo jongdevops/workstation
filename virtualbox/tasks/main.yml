@@ -1,0 +1,5 @@
+---
+# tasks file for virtualbox
+- name: Install virtualbox guest additions (Requires restart of system)
+  ansible.builtin.apt:
+    name: virtualbox-guest-utils
