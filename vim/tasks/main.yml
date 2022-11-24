@@ -1,0 +1,7 @@
+---
+# tasks file for vim
+- name:  Install vim editor
+  ansible.builtin.apt:
+    name: vim
+    state: present
+    update_cache: yes
