@@ -1,0 +1,4 @@
+---
+# tasks file for vscode
+- name: Install vscode
+  ansible.builtin.apt: deb="https://packages.microsoft.com/repos/vscode/pool/main/c/code/code_1.73.1-1667967334_amd64.deb"

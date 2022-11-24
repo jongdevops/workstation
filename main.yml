@@ -3,3 +3,4 @@
     - {role: vim}
     - {role: virtualbox}
     - {role: webbrowser}
+    - {role: vscode}
