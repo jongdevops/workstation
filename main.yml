@@ -2,3 +2,4 @@
   roles:
     - {role: vim}
     - {role: virtualbox}
+    - {role: webbrowser}
