@@ -1,0 +1,6 @@
+---
+# tasks file for curl
+- name: Install Curl
+  ansible.builtin.apt:
+    name: curl
+    state: present

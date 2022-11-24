@@ -4,3 +4,4 @@
     - {role: virtualbox}
     - {role: webbrowser}
     - {role: vscode}
+    - {role: curl}
