@@ -1,0 +1,32 @@
+---
+# tasks file for docker
+- name: Add Docker GPG key
+  shell:
+    cmd: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+- name: Add Docker APT Sources
+  shell:
+    cmd: sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable" 
+
+- name: Update APT to enable Docker repos
+  ansible.builtin.apt:
+    update_cache: yes
+
+- name: Upgrade all packages on servers
+  apt:
+    name: "*"
+    state: latest
+
+- name: Use Docker from Docker repo and not Ubuntu repo
+  shell:
+    cmd: apt-cache policy docker-ce
+
+- name: Install Docker
+  ansible.builtin.apt:
+    name: docker-ce
+
+- name: Make sure Docker service unit is enabled and running
+  ansible.builtin.systemd:
+    state: started
+    enabled: yes
+    name: docker

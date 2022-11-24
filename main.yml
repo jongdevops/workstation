@@ -5,3 +5,4 @@
     - {role: webbrowser}
     - {role: vscode}
     - {role: curl}
+    - {role: docker}
