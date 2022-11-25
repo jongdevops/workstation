@@ -1,8 +1,9 @@
 - hosts: localhost
   roles:
-    - {role: vim}
-    - {role: virtualbox}
-    - {role: webbrowser}
-    - {role: vscode}
-    - {role: curl}
-    - {role: docker}
+    #- {role: vim}
+    #- {role: virtualbox}
+    #- {role: webbrowser}
+    #- {role: vscode}
+    #- {role: curl}
+    #- {role: docker}
+    - {role: kubernetes}
