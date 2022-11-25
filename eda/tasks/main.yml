@@ -1,0 +1,12 @@
+---
+# tasks file for eda
+- name: Install electronics development tools
+  ansible.builtin.apt:
+    pkg:
+      - ngspice
+      - fpga-icestorm 
+      - nextpnr-ice40
+      - verilator
+      - gtkwave
+      - universal-ctags
+
